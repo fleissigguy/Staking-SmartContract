@@ -50,7 +50,7 @@ contract LiquidityMining is Ownable, ReentrancyGuard {
     mapping(address => UserDeposit[]) public userDeposits;
     // total deposited amount of each user
     mapping(address => uint256) public userTotalDeposits;
-
+      
     // states for reward
     uint256 public startDay;
     uint256 public rewardPeriod;
