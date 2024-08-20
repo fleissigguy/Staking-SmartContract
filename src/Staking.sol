@@ -202,7 +202,7 @@ contract Staking is Ownable {
 
         _withdrawBatch(msg.sender, fromIndex, toIndex, onlyClaimable);
     }
-
+        
     function _withdrawBatch(address staker, uint256 _fromIndex, uint256 _toIndex, bool _onlyClaimable) private {
         for (uint256 i = _fromIndex; i <= _toIndex; ) {
             if (_onlyClaimable && isStaked(staker, i)) {
